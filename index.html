@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .heading{
+            text-align: center;
+        }
+        .form-validtion {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #F5f5f5;
+        }
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="heading">Form Validation With Regular Expression</h1>
+
+    <div class="form-validtion">
+        <div class="container">
+            <form action="" method="post" novalidate>  
+                <input type="text" name="name" id="name" placeholder="Full Name" class="form-control">
+                <input type="text" name="username" id="username" placeholder="Username" class="form-control">
+                <input type="email" name="email" id="email" placeholder="Your Email" class="form-control">
+                <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control">
+                <input type="text" name="slug" id="slug" placeholder="Slug" class="form-control">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" name="password" id="password" placeholder="Password" class="form-control">
+                        <p class="error"></p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between">
+                        <button type="button" id="generate-password" class="btn btn-primary py-2">Generate Password</button>
+                        <button type="button" id="copy-password" class="btn btn-primary py-2">Copy</button>
+                    </div>
+                </div>
+                <input type="url" name="url" id="url" placeholder="Website Url" class="form-control">
+                <input type="submit" value="Submit" id="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+<script src="./main.js"></script>
+</body>
+</html>
